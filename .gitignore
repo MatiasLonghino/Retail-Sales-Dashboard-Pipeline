@@ -178,4 +178,4 @@ pyrightconfig.json
 
 
 #gitignore json secrets
-secrets/*.json
+config/secrets/*.json
