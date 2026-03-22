@@ -1,5 +1,3 @@
-
-
 def check_columns(df, expected_columns, table_name):
 
     actual_columns = set(df.columns)
