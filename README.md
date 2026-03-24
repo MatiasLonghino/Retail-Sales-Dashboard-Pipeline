@@ -55,3 +55,10 @@ El proyecto incluye **3 dashboards en Power BI** que consumen los datos procesad
 - 👥 Segmentación de clientes  
 
 Estos dashboards permiten explorar métricas clave y facilitar la toma de decisiones basada en datos.
+
+<img width="940" height="526" alt="image" src="https://github.com/user-attachments/assets/5d10b645-28f2-4a5a-a926-f5afcf93627b" />
+<img width="928" height="523" alt="image" src="https://github.com/user-attachments/assets/0d5b9016-6a88-4e91-a384-5eadf569d72a" />
+<img width="935" height="519" alt="image" src="https://github.com/user-attachments/assets/db798c6c-a122-4cc1-93d0-99b1d39361f1" />
+
+
+
