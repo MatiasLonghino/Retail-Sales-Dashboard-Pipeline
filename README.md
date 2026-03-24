@@ -55,20 +55,3 @@ El proyecto incluye **3 dashboards en Power BI** que consumen los datos procesad
 - 👥 Segmentación de clientes  
 
 Estos dashboards permiten explorar métricas clave y facilitar la toma de decisiones basada en datos.
-
----
-
-### Requisitos
-Python==3.13.7,  numpy==2.4.3,  pandas==3.0.1
-
-
-🧩 Escalabilidad y próximos pasos
-
-Este proyecto está diseñado como base para evolucionar hacia una arquitectura de datos más robusta. Actualmente se están incorporando mejoras para:
-Containerización con Docker
-Orquestación con Apache Airflow
-Integración con bases de datos (Data Warehouse)
-Automatización de cargas incrementales
-Posible despliegue en la nube
-
-La intención es migrar de un pipeline local basado en archivos hacia un sistema completamente orquestado, reproducible y escalable, alineado con prácticas modernas de Data Engineering.
