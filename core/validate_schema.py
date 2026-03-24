@@ -68,3 +68,11 @@ def validate_transactions_schema(df):
     ]
 
     return check_columns(df, expected_columns, "Transactions")
+
+def validate_schemas(data: dict):
+    return {
+        "dim_customers": validate_customers_schema(data["dim_customers"]),
+        "dim_products": validate_products_schema(data["dim_products"]),
+        "dim_stores": validate_stores_schema(data["dim_stores"]),
+        "fact_transactions": validate_transactions_schema(data["fact_transactions"]),
+    }

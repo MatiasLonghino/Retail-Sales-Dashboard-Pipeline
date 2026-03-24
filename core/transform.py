@@ -66,3 +66,11 @@ def clean_transactions(df):
 
     return df
 
+#Orquestador
+def transform(data: dict):
+    return {
+        "dim_customers": clean_customers(data["dim_customers"]),
+        "dim_products": clean_products(data["dim_products"]),
+        "dim_stores": clean_stores(data["dim_stores"]),
+        "fact_transactions": clean_transactions(data["fact_transactions"]),
+    }
