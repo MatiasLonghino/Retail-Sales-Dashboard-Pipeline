@@ -131,6 +131,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+config/secrets
 
 # Spyder project settings
 .spyderproject
@@ -174,8 +175,3 @@ poetry.toml
 pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/python
-
-
-
-#gitignore json secrets
-secrets/*.json

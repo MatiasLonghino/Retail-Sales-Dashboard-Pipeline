@@ -1,16 +1,6 @@
 import pandas as pd
 import numpy as np
 
-#EXTRACT
-def extract_excel(file_path):
-
-    DimCustomers = pd.read_excel(file_path, sheet_name="Customers", engine="openpyxl")
-    DimProducts = pd.read_excel(file_path, sheet_name="Products", engine="openpyxl")
-    DimStores = pd.read_excel(file_path, sheet_name="Stores", engine="openpyxl")
-    FactTransactions = pd.read_excel(file_path, sheet_name="Transactions", engine="openpyxl")
-
-    return DimCustomers, DimProducts, DimStores, FactTransactions
-
 #TRANSFORM
 
 def clean_customers(df):
@@ -76,7 +66,11 @@ def clean_transactions(df):
 
     return df
 
-#LOAD
-def save_csv(df, path):
-
-    df.to_csv(path, index=False, sep=';', encoding='utf-8-sig')
+#Orquestador
+def transform(data: dict):
+    return {
+        "dim_customers": clean_customers(data["dim_customers"]),
+        "dim_products": clean_products(data["dim_products"]),
+        "dim_stores": clean_stores(data["dim_stores"]),
+        "fact_transactions": clean_transactions(data["fact_transactions"]),
+    }
