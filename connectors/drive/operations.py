@@ -63,7 +63,7 @@ def _upload_file(service, buffer: io.BytesIO, filename: str, mime_type: str, fol
     # El mimeType dentro de 'metadata' le dice a Drive cómo guardarlo
     metadata = {
         "name": filename,
-        "mimeType": mime_type  # Ahora dinámico (será "text/csv")
+        "mimeType": mime_type  
     }
     
     if folder_id:
@@ -75,7 +75,7 @@ def _upload_file(service, buffer: io.BytesIO, filename: str, mime_type: str, fol
 
     for n in range(3): 
         try:
-            # Si quieres evitar que Google lo convierta, asegúrate de NO usar
+            # Evitar que Google lo convierta, NO usar
             # el parámetro opcional 'convert=True' (por defecto es False)
             file = service.files().create(
                 body=metadata,
